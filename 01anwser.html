@@ -1,0 +1,137 @@
+<!DOCTYspanE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewspanort" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <style>
+            .non1,.non2,.non3
+            {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <!-- first question start ...  -->
+
+        <h2 id="j"> 1. What is jQuery? </h2> 
+           <h3 class="non1">
+        <p> It is a javascript framework </p> 
+        <p>Framework : write less do more </p> 
+           </h3><hr>
+        <!-- first question end ...  -->
+
+
+        <!-- second question start ...  -->
+
+
+        <h2 id="jj"> 2. How to Aspanspanly CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</h2>
+          <h3 class="non2">
+        <p> we can apply can using differnt built-in mathod of jquery .the method is...</p>
+        <p>1. addclass</p>
+        <p>2. Removeclass</p>
+        <p>3. toggleclass</p>
+        <p>4.CSS</p>
+
+        <ol>
+            <li><strong>css()</strong> : Using css() method we can set or return one or more style properties for the selected elements. <br> <i>Syntax:</i> $(element).css("propertyname","value"); to apply single css property <br> <i>Syntax:</i> $(element).css({"propertyname": "value", "propertyname": "value", "propertyname": "value"}); to apply multiple style/css to element.</li> <br />
+
+            <li><strong>addClass()</strong> : Using addClass() method we can add one or more classes to the selected elements.<br> <i>Syntax:</i> $(element).addClass("class1"); to apply single css property <br> <i>Syntax:</i> $(element).addClass("class1 class2 classs3"); to apply multiple style/css to element.</li> <br />
+
+            <li><strong>removeClass()</strong> : Using removeClass() method we can remove one or more classes from the selected elements.<br> <i>Syntax:</i> $(element).removeClass("class1"); to apply single css property <br> <i>Syntax:</i> $(element).removeClass("class1 class2 classs3"); to apply multiple style/css to element.</li> <br />
+            
+            <li><strong>toggleClass()</strong> : Using toggleClass() method we can toggle between adding/removing classes from the selected elements.<br> <i>Syntax:</i> $(element).toggleClass("class1");</li>
+        </ol>
+
+        <p>==> We can create <strong>animation</strong> using the <strong>animate()</strong> method of jQuery.<br><i>Syntax:</i> $(selector).animate({params},speed,callback);</p>
+          </h3><hr>
+         <!-- second question end...  -->
+
+
+        
+         <!-- thad question start ...  -->
+
+    
+        <h2 id="jjj"> 3. How to create slider with animation?</h2>
+         
+            <div class="non3">
+        <p>thare are a three mathod to apply a  animation</p>
+
+         <h5>1. jQuery slideDown....</h5>
+         <p>The jQuery slideDown() method is used to slide down an element.</p>
+         
+         <p>syntax: <br>
+            $(selector).slideDown(speed,callback);
+         </p>
+         
+         <h5>example : br
+            
+            $("#flip").click(function(){
+                $("#panel").slideDown();
+              });
+            </script>
+         </h5>
+         
+         <br>
+         
+         <h5>2. jQuery slideUp......</h5>
+
+         <p>thare are a three mathod to apply a  animation</p>
+
+         <h5>1. jQuery slideDown....</h5>
+         <p>The jQuery slideUp() method is used to slide up an element.</p>
+         
+         <p>syntax: <br>
+            $(selector).slideUp(speed,callback);
+         </p>
+         
+         <h5>example : br
+            
+            $("#flip").click(function(){
+                $("#panel").slideUp();
+              });
+            </script>
+         </h5>
+         
+         <br>
+
+         
+         <h5>3. jQuery slideToggle</h5>
+
+         <p>The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods. <br>
+
+            If the elements have been slid down, slideToggle() will slide them up. <br>
+            
+            If the elements have been slid up, slideToggle() will slide them down.</p>
+
+            <p>syntax: <br>
+                $(selector).slideUp(speed,callback);
+             </p>
+            </div><hr>
+        <!-- thad question end ...  -->
+
+
+
+
+
+        <script>
+             $("#j").click(function(){
+            $(".non1").toggle()
+           })
+
+           $("#jj").click(function(){
+            $(".non2").toggle()
+           })
+
+           $("#jjj").click(function(){
+            $(".non3").toggle()
+           })
+        </script>
+
+    </body>
+
+    </html>

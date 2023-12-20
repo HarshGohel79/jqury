@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<style>
+li
+{
+    list-style: none;
+}
+.main ,.gp ,.papa,.mother,.span
+{
+    padding: 35px;
+}
+span
+{
+    display: block;
+    border: 2px solid yellowgreen;
+}
+/* .mother,.papa,.gp
+{
+    width: 50%;
+}    */
+
+
+
+</style>
+
+<body>
+    <div class="main">Body
+        <div class="gp"> GrandFather
+            <ul class="papa">Father
+
+                <li class="mother">mother 
+                    
+                    <span>CHILD</span>
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        
+        //   $('span').parents().css("border","3px solid black")    
+
+        //   $('span').parents().css("border","2px solid red")
+
+        // $('span').parent().css("border","3px solid yellow")
+
+        // $(".main").gp().css("border","2px solid green")
+
+        $('.mother').css("width",'50%')
+        
+     </script>
+
+</body>
+
+</html>
